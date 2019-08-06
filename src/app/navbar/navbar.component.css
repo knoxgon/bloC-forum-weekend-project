@@ -1,4 +1,195 @@
-.dropdown:hover .dropdown-menu {
+.cheader {
+  white-space: nowrap;
+  background-color: #0066CC;
+  padding: 0;
+  margin: 0;
+  height: 110px;
+}
+
+.logoimg {
+  display: inline-block;
+  vertical-align: top;
+  width: 95px;
+  height: 95px;
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 350px;
+}
+
+.hcontainer {
+  margin-left: 250px;
+  margin-right: 250px;
+  list-style-type: none;
+  display: inline-block;
+  list-style-position: inside;
+  padding-left: 400px;
+}
+
+.hcontainer a {
+  vertical-align: top;
+  color: antiquewhite;
+  margin-top: 15px;
+  font-family: Bahnschrift, serif;
+  text-decoration: none;
+  float: left;
+  font-size: 1.5em;
+  padding: 25px;
+  transition: 0.5s;
+}
+
+.dropdown-games-content a:hover {
+  transform: scale(1.1);
+  transition: 0.25s;
+}
+
+.hcontainer .hc-a:hover {
+  transform: scale(1.5);
+}
+
+.dropdown-games .dropdown-button {
+  cursor: pointer;
+  vertical-align: top;
+  margin-top: 15px;
+  font-size: 1.5em;
+  padding: 25px;
+  border: none;
+  outline: none;
+  color: antiquewhite;
+  background-color: inherit;
+  font-family: Bahnschrift, serif;
+  transition: 0.5s;
+}
+
+.dropdown-games {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-games .dropdown-button:hover {
+  transform: scale(1.5);
+} 
+
+
+.dropdown-games-content {
+  display: none;
+  position: absolute;
+  background-color: antiquewhite;
+  width: 250px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  border-radius: 25px;
+  z-index: 1;
+}
+
+.dropdown-games-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
   display: block;
-  margin-top: 0;
+  transition: 0.5s;
+}
+
+.dropdown-games:hover .dropdown-games-content {
+  display: block;
+}
+
+.container-login {
+  float:left;
+  margin-left: 350px;
+}
+
+.container-login a {
+  font-size: 1em;
+  color: antiquewhite;
+}
+
+@media screen and (max-width: 1450px) {
+  .logoimg {
+    display: inline-block;
+    vertical-align: top;
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 50px;
+  }
+  .hcontainer {
+    margin-left: 50px;
+    margin-right: 50px;
+    list-style-type: none;
+    display: inline-block;
+    list-style-position: inside;
+    padding-left: 200px;
+  }
+  .container-login {
+    float:left;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .logoimg {
+    display: inline-block;
+    vertical-align: top;
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 20px;
+  }
+  .hcontainer {
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style-type: none;
+    display: inline-block;
+    list-style-position: inside;
+    padding-left: 150px;
+  }
+  .container-login {
+    float:left;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .logoimg {
+    display: inline-block;
+    vertical-align: top;
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 20px;
+  }
+  .hcontainer {
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style-type: none;
+    display: inline-block;
+    list-style-position: inside;
+    padding-left: 150px;
+  }
+  .container-login {
+    float:left;
+    margin-left: 0px;
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  animation-name: rotating;
+  animation-duration: 7.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.rotating:hover {
+  animation-play-state: paused;
 }
