@@ -1,0 +1,29 @@
+<div *ngIf="route.children.length === 0">
+  <div class="cards">
+    <a class="card" [routerLink]="['payday']">
+      <img src="../../assets/img/Payday-Logo_BW.png">
+      <div class="text">
+        <p>Payday is a cooperative first-person shooter video game developed by Overkill Software and published by Sony Online Entertainment.</p>
+      </div>
+    </a>
+    <a class="card" [routerLink]="['aoe']">
+      <img src="../../assets/img/Aoe_fuchs.png">
+      <div class="text">
+        <p>General information regarding Age of Empires games (1,2,3, 2HD, Definitive Edition)</p>
+      </div>
+    </a>
+    <a class="card" [routerLink]="['farcry']">
+      <img src="../../assets/img/FC-banner-2.jpg">
+      <div class="text">
+        <p>General information regarding Far Cry games (1,2,3,4,5)</p>
+      </div>
+    </a>
+    <a class="card" routerLink="/">
+      <img src="../../assets/img/ark-flat.jpg">
+      <div class="text">
+        <p>General information regarding ARK: Survival Evolved</p>
+      </div>
+    </a>
+  </div>
+</div>
+<router-outlet></router-outlet>
