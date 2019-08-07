@@ -16,7 +16,12 @@
 }
 
 .signin-btn {
-  margin: auto;
+  background-color: #0066CC;
+  color: white;
+  padding: 14px 20px;
+  margin: 7px;
+  border: none;
+  cursor: pointer;
 }
 
 .checked-cls {
