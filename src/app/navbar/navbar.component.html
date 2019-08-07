@@ -15,9 +15,42 @@
     </div>
     <a class="hc-a" routerLink="/">Roadmap</a>
     <div class="container-login">
-      <a class="hc-a" routerLink="/">
+      <a class="hc-a" id="loginBtn">
         Login
       </a>
     </div>
+  </div>
+</div>
+
+<div id="login-modal-container">
+  <div class="login-container">
+    <form action="#">
+      <div class="login-img-container">
+        <img src="../../assets/img/accountlogin-icon.png" alt="accimg" class="avatar">
+      </div>
+      <div class="login-interior-container">
+        <p span>Username/Email<p>
+        <label>
+          <input type="text" placeholder="Username / Email" name="usname" required autocomplete="off" >
+        </label>
+        <p span>Password</p>
+        <label>
+          <input type="password" placeholder="********" name="psw" required>
+        </label>
+        <br>
+        <button type="submit" class="login-signin-btn">Sign in</button>
+        <button type="button" class="login-signup-btn">Sign Up</button>
+        <br>
+        <label>
+          <input class="login-checked-cls" type="checkbox" name="remember">Remember me
+        </label>
+        <br>
+      </div>
+
+      <div class="login-exterior-container">
+        <button type="button" class="login-cancel-button">Cancel</button>
+        <span class="login-psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
   </div>
 </div>

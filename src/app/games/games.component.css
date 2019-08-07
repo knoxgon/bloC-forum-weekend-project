@@ -47,3 +47,9 @@ a {
   -moz-osx-font-smoothing: grayscale;
   content: "\f0a8"
 }
+#games-back{
+  border: none;
+  font-size: 24px;
+  margin-left: 3%;
+  margin-top: 10px
+}
